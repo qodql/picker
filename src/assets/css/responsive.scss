@@ -1,0 +1,954 @@
+@media (max-width: 1920px) {
+    .wrap{
+        .main{
+            .main-slide{
+                .swiper{
+                    .swiper-button-prev {
+                        left: 72px; 
+                    }
+                    .swiper-button-next {
+                        right: 72px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .wrap{
+        max-width: 1400px;
+        padding-left: 80px;
+        padding-right: 80px;
+        header{
+            width: 100%;
+            height: 120px;
+        }
+        .main{
+            .main-slide{
+                max-width: 100%;
+                margin-bottom: 100px;
+                .swiper{
+                    width: 100%;
+                    .swiper-wrapper{
+                        width: 100%;
+                        height: 580px;
+                        .swiper-slide{
+                            width: 100%;
+                            height: 100%;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                            .slide-logo-section{
+                                .slide-logo-section-inner {
+                                    span{
+                                        font-size: 20px;
+                                        width: 28%;
+                                    }
+                                    .logo-div{
+                                        height: 200px;
+                                        &.logo-div-first{
+                                            width: 38%;
+                                            background-size: 400px;
+                                            background-position: 0 78px;
+                                        }
+                                        &.logo-div-second{
+                                            width: 26%;
+                                            background-size: 280px;
+                                            background-position: 0 22px;
+                                        }
+                                        &.logo-div-third {
+                                            width: 33%;
+                                            background-size: 380px;
+                                            background-position: 0 30px;
+                                        }
+                                        &.logo-div-fourth {
+                                            width: 32%;
+                                            background-size: 360px;
+                                            background-position: 0 72px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .swiper-button-prev {
+                        left: 20px; 
+                    }
+                    .swiper-button-next {
+                        right: 20px;
+                    }
+                }
+            }
+            .list-section {
+                width: 100%;
+                .list-inner {
+                    gap: 24px;
+                    .list-contents {
+                        width: calc(25%);
+                        height: 170px;
+                        .list-thumb-cont {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+            .ranking-list-section {
+                .ranking-tab {
+                    .ranking-list-inner {
+                        gap: 24px;
+                        .list-contents {
+                            height: 240px;
+                            width: calc(33.33%);
+                            .list-thumb-cont {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .sub-list {
+            width: 100%;
+            gap: 60px 32px;
+            .list-contents {
+                width: calc(25% - 24px);
+            }
+        }
+        .detail {
+            width: 100%;
+        }
+        footer {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .wrap {
+        .main {
+            .main-slide {
+                .swiper {
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            .slide-logo-section {
+                                .slide-logo-section-inner {
+                                    span{
+                                        display: none;
+                                    }
+                                    .logo-div {
+                                        &.logo-div-first,
+                                        &.logo-div-second,
+                                        &.logo-div-third,
+                                        &.logo-div-fourth {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .wrap {
+        .main {
+            .main-slide {
+                .swiper {
+                    .swiper-wrapper {
+                        height: 500px;
+                        .swiper-slide {
+                            .slide-logo-section {
+                                height: 120px;
+                            }
+                        }
+                    }
+                }
+            }
+            .list-section {
+                margin: 80px auto;
+                .list-inner {
+                    gap: 16px;
+                    .list-contents {
+                        height: 160px;
+                        .list-thumb-cont {
+                            .list-logo {
+                                width: 130px;
+                            }
+                        }
+                    }
+                }
+            }
+            .ranking-list-section {
+                .ranking-tab {
+                    .hashtag {
+                        margin-bottom: 16px;
+                        button {
+                            height: 36px;
+                            font-size: 18px;
+                        }
+                    }
+                    .ranking-list-inner {
+                        gap: 16px;
+                        .list-contents {
+                            height: 220px;
+                        }
+                    }
+                }
+            }
+        }
+        .sub-list {
+            gap: 52px 28px;
+            .list-contents {
+                width: calc(25% - 21px);
+                height: 300px;
+            }
+        }
+        footer {
+            .footer-top {
+                .footer-link {
+                    gap: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .wrap {
+        padding: 0 32px;
+        header {
+            height: 100px;
+            padding: 32px 0;
+            .nav {
+                gap: 28px;
+                .logo {
+                    width: 120px;
+                    height: 48px;
+                }
+                a {
+                    font-size: 16px;
+                }
+            }
+            .nav-right {
+                form {
+                    .search-box {
+                        margin-right: 12px;
+                        .search-btn {
+                            width: 20px;
+                            height: 20px;
+                        }
+                        &.active {
+                            display: block;
+                            .search-btn {
+                                width: 160px;
+                                height: 36px;
+                                border-radius: 8px;
+                                padding-left: 36px;
+                                background-position: 10px;
+                            }
+                        }
+                        .search-clear {
+                            width: 16px;
+                            height: 16px;
+                            top: 11px;
+                            right: 12px;
+                        }
+                    }
+                }
+                .login-btn {
+                    width: 76px;
+                    height: 29px;
+                    font-size: 16px;
+                    border-radius: 4px;
+                    color: #fff;
+                }
+            }
+        }
+        .main {
+            .list-section {
+                .list-inner {
+                    flex-wrap: wrap;
+                    overflow: hidden;
+                    .list-contents {
+                        width: calc(33.33% - 11px);
+                        &:nth-child(n + 4) {
+                            display: none;
+                        }
+                        .list-thumb-cont {
+                            .list-logo {
+                                width: 120px;
+                                height: 70px;
+                                bottom: 10px;
+                                &.left {
+                                    left: 16px;
+                                }
+                                &.center {
+                                    left: 50%;
+                                    transform: translate(-50%);
+                                }
+                                &.right {
+                                    right: 16px;
+                                }
+                                &.veteran,
+                                &.physiognomy,
+                                &.exit,
+                                &.jujutsu,
+                                &.idol,
+                                &.frieren {
+                                    background-size: 100%;
+                                }
+                                &.exhum {
+                                    background-size: 125%;
+                                }
+                                &.idol {
+                                    width: 70%;
+                                }
+                                &.slayer {
+                                    height: 80px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .ranking-list-section {
+                .ranking-tab {
+                    .ranking-list-inner {
+                        gap: 16px;
+                        .list-contents {
+                            width: calc(50% - 8px);
+                            height: 220px;
+                            &:nth-child(n + 3) {
+                                display: none;
+                            }
+                            .list-thumb-cont {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .sub-list {
+            .list-contents {
+                width: calc(33.33% - 19px);
+            }
+        }
+        .detail {
+            .detail-wrap {
+                .detail-info {
+                    .detail-thumb {
+                        width: 100%;
+                        height: 100%;
+                        img {
+                            transform: translateX(-30%);
+                            object-fit: cover;
+                        }
+                    }
+                    .detail-info-inner {
+                        width: 100%;
+                        .detail-tit {
+                            font-size: 36px;
+                        }
+                        ul {
+                            gap: 16px;
+                            li {
+                                span {
+                                    font-size: 18px;
+                                }
+                            }
+                            .detail-age {
+                                width: 36px;
+                                height: 36px;
+                                line-height: 36px;
+                                background-color: #3C92D0;
+                                span {
+                                    font-size: 18px;
+                                    padding: 3px;
+                                }
+                            }
+                        }
+                        .detail-description {
+                            p {
+                                font-size: 18px;
+                                margin: 20px 0;
+                            }
+                            button {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+                .detail-episode {
+                    margin-top: 36px;
+                    p {
+                        font-size: 24px;
+                    }
+                    ul {
+                        li {
+                            .episode-info {
+                                padding: 18px 0;
+                                img {
+                                    width: 200px;
+                                    height: 120px;
+                                    border-radius: 8px;
+                                    margin-right: 36px;
+                                    object-fit: cover;
+                                }
+                                span {
+                                    font-size: 20px;
+                                    margin-right: 20px;
+                                }
+                            }
+                            .episode-runtime {
+                                p {
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        footer {
+            .footer-top {
+                .footer-link {
+                    gap: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .wrap {
+        padding: 0 16px;
+        header {
+            width: 100%;
+            height: 100px;
+            padding: 32px 0;
+            .nav {
+                gap: 24px;
+                .logo {
+                    width: 120px;
+                    height: 48px;
+                }
+                a {
+                    font-size: 16px;
+                }
+            }
+            .nav-right {
+                form {
+                    .search-box {
+                        margin-right: 12px;
+                        .search-btn {
+                            width: 20px;
+                            height: 20px;
+                        }
+                        &.active {
+                            display: block;
+                            .search-btn {
+                                width: 160px;
+                                height: 32px;
+                                border-radius: 8px;
+                                padding-left: 36px;
+                                background-position: 10px;
+                            }
+                        }
+                        .search-clear {
+                            width: 16px;
+                            height: 16px;
+                            top: 11px;
+                            right: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        .main {
+            .main-slide {
+                .swiper {
+                    .swiper-wrapper {
+                        height: 400px;
+                    }
+                }
+            }
+            .list-section {
+                margin: 36px auto;
+                .list-tit-section {
+                    margin-bottom: 12px;
+                    .list-tit {
+                        font-size: 20px;
+                    }
+                }
+                .list-inner {
+                    gap: 8px;
+                    .list-contents {
+                        width: calc(33.33% - 6px);
+                        height: 120px;
+                        &:nth-child(n + 4) {
+                            display: none;
+                        }
+                        .list-thumb-cont {
+                            .list-logo {
+                                &.left {
+                                    left: 16px;
+                                }
+                                &.center {
+                                    left: 50%;
+                                    transform: translate(-50%);
+                                }
+                                &.veteran,
+                                &.physiognomy,
+                                &.exit,
+                                &.jujutsu,
+                                &.idol,
+                                &.frieren {
+                                    background-size: 100%;
+                                }
+                                &.exhum {
+                                    background-size: 125%;
+                                }
+                                &.idol {
+                                    width: 70%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .ranking-list-section {
+                .ranking-tab {
+                    .hashtag {
+                        margin-bottom: 12px;
+                        button {
+                            height: 32px;
+                            line-height: 23px;
+                            font-size: 16px;
+                            padding: 2px 20px;
+                            margin-right: 8px;
+                        }
+                    }
+                    .ranking-list-inner {
+                        gap: 8px;
+                        .list-contents {
+                            width: calc(50% - 4px);
+                            height: 200px;
+                            &:nth-child(n + 3) {
+                                display: none;
+                            }
+                            .list-thumb-cont {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .sub-list {
+                width: 100%;
+                gap: 32px 8px;
+                .list-contents {
+                    width: calc(33.33% - 6px);
+                    height: 260px;
+                    .list-thumb-cont {
+                        width: 100%;
+                        height: 100%;
+                        .list-thumb {
+                            object-fit: fill;
+                        }
+                    }
+                }
+            }
+            .detail {
+                .detail-wrap {
+                    .detail-info {
+                        height: 400px;
+                        .detail-thumb {
+                            width: 100%;
+                            height: 100%;
+                            img {
+                                transform: translateX(-40%);
+                                object-fit: cover;
+                            }
+                        }
+                        .detail-info-inner {
+                            width: 100%;
+                            .detail-tit {
+                                font-size: 28px;
+                            }
+                            ul {
+                                gap: 16px;
+                                li {
+                                    span {
+                                        font-size: 18px;
+                                    }
+                                }
+                                .detail-age {
+                                    width: 36px;
+                                    height: 36px;
+                                    line-height: 36px;
+                                    background-color: #3C92D0;
+                                    span {
+                                        font-size: 18px;
+                                        padding: 3px;
+                                    }
+                                }
+                            }
+                            .detail-description {
+                                p {
+                                    font-size: 16px;
+                                }
+                                button {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                    .detail-episode {
+                        margin-top: 36px;
+                        p {
+                            font-size: 20px;
+                        }
+                        ul {
+                            li {
+                                .episode-info {
+                                    padding: 16px 0;
+                                    img {
+                                        width: 180px;
+                                        height: 100px;
+                                        border-radius: 8px;
+                                        margin-right: 28px;
+                                        object-fit: cover;
+                                    }
+                                    span {
+                                        font-size: 18px;
+                                        margin-right: 16px;
+                                    }
+                                }
+                                .episode-runtime {
+                                    p {
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        footer {
+            width: 100%;
+            margin: 100px auto;
+            .footer-top {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                gap: 8px;
+                .footer-link {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center; 
+                    gap: 8px;
+                    li {
+                        a {
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .footer-sns {
+                    display: flex;
+                    gap: 16px;
+                }
+            }
+            .footer-bottom {
+                .footer-info {
+                    margin-top: 24px;
+                    li {
+                        text-align: center;
+                        padding-bottom: 12px;
+                        span {
+                            font-size: 12px;
+                            color: #fff;
+                            &:first-child {
+                                padding-right: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .wrap {
+        header {
+            height: 80px;
+            padding: 28px 0;
+            .nav {
+                gap: 8px;
+                .logo {
+                    width: 100px;
+                    height: 48px;
+                }
+                a {
+                    display: none;
+                }
+            }
+            .nav-right {
+                form {
+                    .search-box {
+                        margin-right: 8px;
+                        .search-btn {
+                            width: 18px;
+                            height: 18px;
+                        }
+                        &.active {
+                            display: block;
+                            .search-btn {
+                                width: 120px;
+                                height: 32px;
+                                border-radius: 4px;
+                                padding-left: 24px;
+                                background-position: 4px;
+                                font-size: 10px;
+                            }
+                        }
+                        .search-clear {
+                            width: 14px;
+                            height: 14px;
+                            top: 10px;
+                            right: 8px;
+                        }
+                    }
+                }
+            }
+        }
+        .main {
+            .main-slide {
+                .swiper {
+                    .swiper-wrapper {
+                        height: 360px;
+                        .swiper-slide {
+                            img{
+                                border-radius: 8px;
+                            }
+                            .slide-logo-section {
+                                .slide-logo-section-inner {
+                                    .logo-div {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .list-section {
+                margin: 32px auto;
+                .list-tit-section {
+                    margin-bottom: 8px;
+                    .list-tit {
+                        font-size: 20px;
+                    }
+                }
+                .list-inner {
+                    .list-contents {
+                        width: calc(50% - 4px);
+                        &:nth-child(n + 3) {
+                            display: none;
+                        }
+                        .list-thumb-cont {
+                            .list-thumb {
+                                border-radius: 4px;
+                            }
+                            .list-logo {
+                                width: 100px;
+                                height: 40px;
+                                bottom: 10px;
+                                &.left {
+                                    left: 8px;
+                                }
+                                &.right {
+                                    right: 4px;
+                                }
+                                &.veteran,
+                                &.physiognomy,
+                                &.exit,
+                                &.exhum,
+                                &.jujutsu,
+                                &.idol,
+                                &.frieren {
+                                    background-size: 100%;
+                                }
+                                &.exhum {
+                                    background-size: 125%;
+                                }
+                                &.slayer {
+                                    height: 70px;
+                                }
+                                &.idol {
+                                    background-size: 100%;
+                                    width: 70%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .ranking-list-section {
+                .ranking-tab {
+                    width: 100%;
+                    .hashtag {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-bottom: 8px;
+                        gap: 8px;
+                        button {
+                            width: calc(50% - 4px);
+                            height: 32px;
+                            line-height: 18px;
+                            font-size: 16px;
+                            padding: 4px 20px;
+                            margin-right: 0;
+                        }
+                    }
+                    .ranking-list-inner {
+                        gap: 8px;
+                        .list-contents {
+                            width: 100%;
+                            height: 200px;
+                            &:nth-child(n + 2) {
+                                display: none;
+                            }
+                            .list-thumb-cont {
+                                .list-thumb {
+                                    border-radius: 4px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .sub-list {
+            gap: 16px 8px;
+            .list-contents {
+                width: calc(50% - 4px);
+                height: 200px;
+                .list-thumb-cont {
+                    .list-thumb {
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+        .detail {
+            .detail-wrap {
+                .detail-info {
+                    width: 100%;
+                    height: 320px;
+                    .detail-thumb {
+                        width: 30%;
+                        height: 100%;
+                        img {
+                            transform: translateX(-40%);
+                            object-fit: cover;
+                        }
+                    }
+                    .detail-info-inner {
+                        width: 70%;
+                        padding: 28px 0;
+                        .detail-tit {
+                            font-size: 20px;
+                            padding: 28px 0 24px;
+                        }
+                        ul {
+                            gap: 4px;
+                            li {
+                                span {
+                                    font-size: 14px;
+                                }
+                            }
+                            .detail-age {
+                                width: 28px;
+                                height: 28px;
+                                line-height: 28px;
+                                span {
+                                    font-size: 16px;
+                                    padding: 0px;
+                                }
+                            }
+                        }
+                        .detail-description {
+                            p {
+                                font-size: 14px;
+                                margin: 16px 0;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                                word-break: break-all;
+                            }
+                            button {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+                .detail-episode {
+                    margin-top: 28px;
+                    p {
+                        font-size: 16px;
+                    }
+                    ul {
+                        li {
+                            .episode-info {
+                                display: flex;
+                                align-items: center;
+                                padding: 16px 0;
+                                img {
+                                    width: 120px;
+                                    height: 72px;
+                                    border-radius: 4px;
+                                    margin-right: 8px;
+                                }
+                                span {
+                                    font-size: 12px;
+                                    margin-right: 4px;
+                                    &:nth-child(2) {
+                                        width: 28px;
+                                    }
+                                }
+                            }
+                            .episode-runtime {
+                                width: 40px;
+                                p {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        footer {
+            .footer-top {
+                .footer-sns {
+                    gap: 8px;
+                }
+            }
+        }
+    }
+}
+
