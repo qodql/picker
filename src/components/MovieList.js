@@ -12,7 +12,7 @@ const List = ({state}) => {
     
       const veteran = state.veteran[0].id;
       const physiognomy = state.physiognomy[0].id;
-      const exit = state.exit[2].id;
+      const exit = state.exit[1].id;
       const exhum = state.exhum[0].id;
 
 

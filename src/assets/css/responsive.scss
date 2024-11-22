@@ -350,10 +350,6 @@
                     .detail-thumb {
                         width: 100%;
                         height: 100%;
-                        img {
-                            transform: translateX(-30%);
-                            object-fit: cover;
-                        }
                     }
                     .detail-info-inner {
                         width: 100%;
@@ -380,8 +376,9 @@
                         }
                         .detail-description {
                             p {
-                                font-size: 18px;
+                                font-size: 16px;
                                 margin: 20px 0;
+                                text-overflow: ellipsis;
                             }
                             button {
                                 font-size: 16px;
@@ -555,91 +552,95 @@
                     }
                 }
             }
-            .sub-list {
-                width: 100%;
-                gap: 32px 8px;
-                .list-contents {
-                    width: calc(33.33% - 6px);
-                    height: 260px;
-                    .list-thumb-cont {
-                        width: 100%;
-                        height: 100%;
-                        .list-thumb {
-                            object-fit: fill;
-                        }
+        }
+        .sub-list {
+            width: 100%;
+            gap: 32px 8px;
+            .list-contents {
+                width: calc(33.33% - 6px);
+                height: 260px;
+                .list-thumb-cont {
+                    width: 100%;
+                    height: 100%;
+                    .list-thumb {
+                        object-fit: fill;
                     }
                 }
             }
-            .detail {
-                .detail-wrap {
-                    .detail-info {
-                        height: 400px;
-                        .detail-thumb {
-                            width: 100%;
-                            height: 100%;
-                            img {
-                                transform: translateX(-40%);
-                                object-fit: cover;
+        }
+        .detail {
+            .detail-wrap {
+                .detail-info {
+                    height: 400px;
+                    .detail-thumb {
+                        width: 50%;
+                        height: 100%;
+                        img {
+                            transform: translateX(-40%);
+                            object-fit: cover;
+                        }
+                    }
+                    .detail-info-inner {
+                        width: 100%;
+                        .detail-tit {
+                            font-size: 28px;
+                        }
+                        ul {
+                            gap: 12px;
+                            li {
+                                span {
+                                    font-size: 16px;
+                                }
+                            }
+                            .detail-age {
+                                width: 36px;
+                                height: 36px;
+                                line-height: 36px;
+                                background-color: #3C92D0;
+                                span {
+                                    font-size: 16px;
+                                    padding: 3px;
+                                }
                             }
                         }
-                        .detail-info-inner {
-                            width: 100%;
-                            .detail-tit {
-                                font-size: 28px;
+                        .detail-description {
+                            height: 160px;
+                            p {
+                                height: 100%;
+                                margin: 12px 0;
+                                font-size: 14px;
+                                overflow: hidden;
                             }
-                            ul {
-                                gap: 16px;
-                                li {
-                                    span {
-                                        font-size: 18px;
-                                    }
-                                }
-                                .detail-age {
-                                    width: 36px;
-                                    height: 36px;
-                                    line-height: 36px;
-                                    background-color: #3C92D0;
-                                    span {
-                                        font-size: 18px;
-                                        padding: 3px;
-                                    }
-                                }
-                            }
-                            .detail-description {
-                                p {
-                                    font-size: 16px;
-                                }
-                                button {
-                                    font-size: 16px;
-                                }
+                            button {
+                                font-size: 16px;
                             }
                         }
                     }
-                    .detail-episode {
-                        margin-top: 36px;
-                        p {
-                            font-size: 20px;
-                        }
-                        ul {
-                            li {
-                                .episode-info {
-                                    padding: 16px 0;
-                                    img {
-                                        width: 180px;
-                                        height: 100px;
-                                        border-radius: 8px;
-                                        margin-right: 28px;
-                                        object-fit: cover;
-                                    }
-                                    span {
-                                        font-size: 18px;
-                                        margin-right: 16px;
-                                    }
+                }
+                .detail-episode {
+                    margin-top: 36px;
+                    p {
+                        font-size: 20px;
+                    }
+                    ul {
+                        li {
+                            .episode-info {
+                                padding: 16px 0;
+                                img {
+                                    width: 180px;
+                                    height: 100px;
+                                    border-radius: 8px;
+                                    margin-right: 28px;
+                                    object-fit: cover;
                                 }
-                                .episode-runtime {
-                                    p {
-                                        font-size: 18px;
-                                    }
+                                span {
+                                    font-size: 18px;
+                                    margin-right: 16px;
+                                }
+                            }
+                            .episode-runtime {
+                                p {
+                                    font-size: 18px;
                                 }
                             }
                         }
