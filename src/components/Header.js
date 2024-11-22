@@ -61,9 +61,9 @@ const Header = () => {
   }
 
   
-  const moveLogin = ()=>{
-    navigator('/login');
-  }
+  // const moveLogin = ()=>{
+  //   navigator('/login');
+  // }
 
 
   return (
@@ -91,7 +91,7 @@ const Header = () => {
               onClick={searchClear}>x</button>
             </div>
           </form>
-          <button className='login-btn' onClick={moveLogin}>로그인</button>
+          <button className='login-btn'>로그인</button>
         </div>
       </header>
     </>

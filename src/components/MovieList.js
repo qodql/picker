@@ -36,7 +36,7 @@ const List = ({state}) => {
                 </li>
                 <li className='list-contents'>
                     <p className='list-thumb-cont' onClick={()=>moveDetail(exit)}>
-                        <img className='list-thumb' src={movieThumb+state.exit[2].backdrop_path} alt='moive-list'/>
+                        <img className='list-thumb' src={movieThumb+state.exit[1].backdrop_path} alt='moive-list'/>
                         <span className='list-logo left exit'></span>
                     </p>
                 </li>
