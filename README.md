@@ -2,17 +2,19 @@
 
 <!-- logo -->
 <p><img src="https://github.com/qodql/picker/blob/main/src/assets/img/logo-black.svg" width="250" height="130"/></p>
-<img src="https://github.com/qodql/picker/blob/main/src/assets/img/readme/icon-project-html.svg"/>
-<img src="https://github.com/qodql/picker/blob/main/src/assets/img/readme/icon-project-css.svg"/>
-<img src="https://github.com/qodql/picker/blob/main/src/assets/img/readme/icon-project-sass.svg"/>
-<img src="https://github.com/qodql/picker/blob/main/src/assets/img/readme/icon-project-figma.svg"/>
-<img src="https://github.com/qodql/picker/blob/main/src/assets/img/readme/icon-project-swiper.svg"/>
-<img src="https://github.com/qodql/picker/blob/main/src/assets/img/readme/icon-project-npm.svg"/>
-<img src="https://github.com/qodql/picker/blob/main/src/assets/img/readme/icon-project-js.svg"/>
-<img src="https://github.com/qodql/picker/blob/main/src/assets/img/readme/icon-project-react.svg"/>
-<img src="https://github.com/qodql/picker/blob/main/src/assets/img/readme/icon-project-redux.svg"/>
-<img src="https://github.com/qodql/picker/blob/main/src/assets/img/readme/icon-project-vercel.svg"/>
-<img src="https://github.com/qodql/picker/blob/main/src/assets/img/readme/icon-project-git.svg"/>
+<p>
+    <img src="https://github.com/qodql/picker/blob/main/src/assets/img/readme/icon-project-html.svg"/>
+    <img src="https://github.com/qodql/picker/blob/main/src/assets/img/readme/icon-project-css.svg"/>
+    <img src="https://github.com/qodql/picker/blob/main/src/assets/img/readme/icon-project-sass.svg"/>
+    <img src="https://github.com/qodql/picker/blob/main/src/assets/img/readme/icon-project-figma.svg"/>
+    <img src="https://github.com/qodql/picker/blob/main/src/assets/img/readme/icon-project-swiper.svg"/>
+    <img src="https://github.com/qodql/picker/blob/main/src/assets/img/readme/icon-project-npm.svg"/>
+    <img src="https://github.com/qodql/picker/blob/main/src/assets/img/readme/icon-project-js.svg"/>
+    <img src="https://github.com/qodql/picker/blob/main/src/assets/img/readme/icon-project-react.svg"/>
+    <img src="https://github.com/qodql/picker/blob/main/src/assets/img/readme/icon-project-redux.svg"/>
+    <img src="https://github.com/qodql/picker/blob/main/src/assets/img/readme/icon-project-vercel.svg"/>
+    <img src="https://github.com/qodql/picker/blob/main/src/assets/img/readme/icon-project-git.svg"/>
+</p>
 
 ## 📝 프로젝트 소개
 picker는 TMDB API를 활용한 영화 정보 제공 사이트 입니다.
