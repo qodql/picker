@@ -2,32 +2,34 @@
 
 <!-- logo -->
 <p><img src="https://github.com/qodql/picker/blob/main/src/assets/img/logo-black.svg" width="250" height="130"/></p>
-<img src="https://github.com/qodql/vue-portfolio/blob/main/assets/img/icon/icon-project-html.svg"/>
-<img src="https://github.com/qodql/vue-portfolio/blob/main/assets/img/icon/icon-project-css.svg"/>
-<img src="https://github.com/qodql/vue-portfolio/blob/main/assets/img/icon/icon-project-sass.svg"/>
-<img src="https://github.com/qodql/vue-portfolio/blob/main/assets/img/icon/icon-project-figma.svg"/>
-<img src="https://github.com/qodql/vue-portfolio/blob/main/assets/img/icon/icon-project-swiper.svg"/>
-<img src="https://github.com/qodql/vue-portfolio/blob/main/assets/img/icon/icon-project-npm.svg"/>
-<img src="https://github.com/qodql/vue-portfolio/blob/main/assets/img/icon/icon-project-js.svg"/>
-<img src="https://github.com/qodql/vue-portfolio/blob/main/assets/img/icon/icon-project-react.svg"/>
-<img src="https://github.com/qodql/vue-portfolio/blob/main/assets/img/icon/icon-project-redux.svg"/>
-<img src="https://github.com/qodql/vue-portfolio/blob/main/assets/img/icon/icon-project-vercel.svg"/>
-<img src="https://github.com/qodql/vue-portfolio/blob/main/assets/img/icon/icon-project-git.svg"/>
+<img src="https://github.com/qodql/picker/blob/main/assets/img/icon/icon-project-html.svg"/>
+<img src="https://github.com/qodql/picker/blob/main/assets/img/icon/icon-project-css.svg"/>
+<img src="https://github.com/qodql/picker/blob/main/assets/img/icon/icon-project-sass.svg"/>
+<img src="https://github.com/qodql/picker/blob/main/assets/img/icon/icon-project-figma.svg"/>
+<img src="https://github.com/qodql/picker/blob/main/assets/img/icon/icon-project-swiper.svg"/>
+<img src="https://github.com/qodql/picker/blob/main/assets/img/icon/icon-project-npm.svg"/>
+<img src="https://github.com/qodql/picker/blob/main/assets/img/icon/icon-project-js.svg"/>
+<img src="https://github.com/qodql/picker/blob/main/assets/img/icon/icon-project-react.svg"/>
+<img src="https://github.com/qodql/picker/blob/main/assets/img/icon/icon-project-redux.svg"/>
+<img src="https://github.com/qodql/picker/blob/main/assets/img/icon/icon-project-vercel.svg"/>
+<img src="https://github.com/qodql/picker/blob/main/assets/img/icon/icon-project-git.svg"/>
 
 ## 📝 프로젝트 소개
 picker는 TMDB API를 활용한 영화 정보 제공 사이트 입니다.
+<br>
 
 ## 🗓 프로젝트 일정
 **총 일정 2024.09.11 ~ 2024.09.25(15일), 1인**
+<br>
 
 
 ## 🔗 배포 URL
 <a href="https://picker-ykb.vercel.app/" target="_blank">https://picker-ykb.vercel.app/</a>
 <br />
 
-
 ## 🖥 화면 구성
 <img src="https://github.com/qodql/picker/blob/main/src/assets/img/readme/main.png">
+<br>
 
 ## ⚙ 기술 스택
 이 프로젝트는 React 프레임워크로 구현되었습니다.
@@ -80,7 +82,7 @@ picker는 TMDB API를 활용한 영화 정보 제공 사이트 입니다.
 📦picker
  ┣ 📂src                 # 소스 코드 디렉토리
  ┃ ┣ 📂api               # API 관리 폴더
- ┃ ┃ ┣ tmdb.js            # tmdb API
+ ┃ ┃ ┣ 📜tmdb.js         # tmdb API
  ┃ ┣ 📂assets            # css, 이미지, 폰트 관리 폴더
  ┃ ┃ ┣ 📂css
  ┃ ┃ ┣ 📂img
@@ -92,7 +94,7 @@ picker는 TMDB API를 활용한 영화 정보 제공 사이트 입니다.
  ┃ ┣ 📂pages             # 페이지 폴더
  ┃ ┃ ┣ 📜Main.js           
  ┃ ┃ ┣ 📜Details.js 
- ┃ ┣ 📜App.js            #Route 관리 파일
+ ┃ ┣ 📜App.js            # Route 관리 파일
  ┃ ┣ 📜index.js          # React-Redux 사용 상태관리
  ┗ 📜README.md
  </code>
