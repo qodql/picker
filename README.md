@@ -1,60 +1,25 @@
-<div align="left">
+
 
 <!-- logo -->
-<p><img src="https://github.com/qodql/picker/blob/main/src/assets/img/logo-black.svg" width="200" height="130"/></p>
-<img src="https://github.com/qodql/vue-protfolio/blob/main/src/assets/img/icon/icon-project-html.svg"/>
+<p><img src="https://github.com/qodql/picker/blob/main/src/assets/img/logo-black.svg" width="250" height="130"/></p>
+<img src="https://github.com/qodql/vue-protfolio/blob/main/assets/img/icon/icon-project-html.svg"/>
 
-</div> 
+
 
 ## 📝 프로젝트 소개
-picker는 사용자에게 영화 정보를 제공해주는<br />
-웹 애플리케이션입니다.
-<br />
-<br />
-React를 기반으로 전역상태 관리
-반응형
+picker는 TMDB API를 활용한 영화 정보 제공 사이트 입니다.
 
 ## 🗓 프로젝트 일정
-**총 일정 2024.10.4 ~ 2024.10.27(24일), 3인**
-<br /><br />
-10.4 ~ 10.8 주제선정 및 기획
-<br />
-10.8 ~ 10.11 디자인 및 화면 구성
-<br />
-10.12 ~ 10.22 프로젝트 진행
-<br />
-10.23 ~ 10.27 점검 및 오류 수정
+**총 일정 2024.09.11 ~ 2024.09.25(15일), 1인**
+
 
 ## 🔗 배포 URL
-<a href="https://book-ieum.vercel.app/" target="_blank">https://book-ieum.vercel.app/</a>
+<a href="https://picker-ykb.vercel.app/" target="_blank">https://picker-ykb.vercel.app/</a>
 <br />
 
-## 💁‍♂️ 프로젝트 팀원
-<table>
-    <tr>
-        <th>이름</th>
-        <th>Github</th>
-        <th>직무</th>
-    </tr>
-    <tr>
-        <td>강민현</td>
-        <td><a href="https://github.com/minhyun-k">minhyun-k</a></td>
-        <td>팀장, 데이터</td>
-    </tr>
-     <tr>
-        <td>윤경빈</td>
-        <td><a href="https://github.com/qodql">qodql</a></td>
-        <td>배포, API, 디자인</td>
-    </tr>
-    <tr>
-        <td>이홍영</td>
-        <td><a href="https://github.com/Infouse">Infouse</a></td>
-        <td>기능 개발</td>
-    </tr>
-</table>
 
 ## 🖥 화면 구성
-<img src="https://github.com/qodql/ieum-ykb/blob/main/public/readme/img-project02.jpg" width="680">
+<img src="https://github.com/qodql/picker/blob/main/src/assets/img/readme/main.png">
 
 ## ⚙ 기술 스택
 이 프로젝트는 다양한 최신 기술을 활용하여 구현되었습니다.
