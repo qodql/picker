@@ -474,6 +474,8 @@ ul,li,ol{
                     }
                     .detail-description{
                         p{
+                            max-height: 160px;
+                            overflow: hidden;
                             font-size: 18px;
                             color: #fff;
                             margin: 24px 0;
