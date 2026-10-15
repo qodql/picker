@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { tvdetail } from '../api/tmdb';
+import { tvdetail, getAge, ageClass } from '../api/tmdb';
 import { useParams } from 'react-router-dom';
 
 const Tvdetail = () => {
@@ -21,6 +21,7 @@ const Tvdetail = () => {
     let episodeThumb = 'https://image.tmdb.org/t/p/w300/';
 
     let grade = res.data.vote_average.toFixed(1);
+    let age = getAge(res.data);
 
 
 
@@ -31,11 +32,11 @@ const Tvdetail = () => {
                 <div className='detail-info-inner'>
                     <h5 className='detail-tit'>{res.data.name}</h5>
                     <ul>
-                        <li className='detail-age'><span>{res.adult === 'false' ? "19+":"12+"}</span></li>
+                        {age && <li className={`detail-age ${ageClass(age)}`}><span>{age}</span></li>}
                         <li className='detail-grade'><span>{grade}</span></li>
                         <li className='detail-date'><span>{res.data.first_air_date}</span></li>
                         <li className='detail-runningtime'><span>{res.data.episode_run_time[0]}분</span></li>
-                        <li className='detail-genre'><span>{res.data.genres[0].name}</span></li>
+                        <li className='detail-genre'><span>{res.data.genres[0]?.name}</span></li>
                     </ul>
                     <div className='detail-description'>
                         <p>{res.data.overview}</p>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { detail } from '../api/tmdb';
+import { detail, getAge, ageClass } from '../api/tmdb';
 import { useParams } from 'react-router-dom';
 
 const Details = () => {
@@ -11,7 +11,7 @@ const Details = () => {
         (async function(){
             setRes(await detail(id));
         }())
-    },[])
+    },[id])
     
     if(!res) return<>준비중..</>;
     
@@ -22,6 +22,7 @@ const Details = () => {
     let episodeThumb = 'https://image.tmdb.org/t/p/w300/';
 
     let grade = res.data.vote_average.toFixed(1);
+    let age = getAge(res.data);
 
 
 
@@ -32,11 +33,11 @@ const Details = () => {
                 <div className='detail-info-inner'>
                     <h5 className='detail-tit'>{res.data.title}</h5>
                     <ul>
-                        <li className='detail-age'><span>{res.data.adult === 'false' ? "19+":"15+"}</span></li>
+                        {age && <li className={`detail-age ${ageClass(age)}`}><span>{age}</span></li>}
                         <li className='detail-grade'><span>{grade}</span></li>
                         <li className='detail-date'><span>{res.data.release_date}</span></li>
                         <li className='detail-runningtime'><span>{res.data.runtime}분</span></li>
-                        <li className='detail-genre'><span>{res.data.genres[0].name}</span></li>
+                        <li className='detail-genre'><span>{res.data.genres[0]?.name}</span></li>
                     </ul>
                     <div className='detail-description'>
                         <p>{res.data.overview}</p>

@@ -4,10 +4,10 @@
             .main-slide{
                 .swiper{
                     .swiper-button-prev {
-                        left: 72px; 
+                        left: calc(50% - 700px + 24px);
                     }
                     .swiper-button-next {
-                        right: 72px;
+                        right: calc(50% - 700px + 24px);
                     }
                 }
             }
@@ -367,7 +367,6 @@
                                 width: 36px;
                                 height: 36px;
                                 line-height: 36px;
-                                background-color: #3C92D0;
                                 span {
                                     font-size: 18px;
                                     padding: 3px;
@@ -596,7 +595,6 @@
                                 width: 36px;
                                 height: 36px;
                                 line-height: 36px;
-                                background-color: #3C92D0;
                                 span {
                                     font-size: 16px;
                                     padding: 3px;
@@ -953,3 +951,17 @@
     }
 }
 
+// 랭킹 순위 숫자 크기 (화면 크기별)
+@media (max-width: 1024px) {
+    .wrap .main .ranking-list-section .ranking-tab .ranking-list-inner .list-contents .list-thumb-cont .rank-num {
+        font-size: 56px;
+        right: 12px;
+    }
+}
+@media (max-width: 480px) {
+    .wrap .main .ranking-list-section .ranking-tab .ranking-list-inner .list-contents .list-thumb-cont .rank-num {
+        font-size: 40px;
+        right: 8px;
+        bottom: 2px;
+    }
+}

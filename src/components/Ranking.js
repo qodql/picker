@@ -13,45 +13,20 @@ const Ranking = ({state}) => {
 
     let listThumb = 'https://image.tmdb.org/t/p/w500/';
 
-    let animeRanking = state.animation.map((v,i)=> {
-        return i < 3 ?(
-            <li key={v.id} className='list-contents' onClick={()=>moveDetail(v.id)}>
-                <p className='list-thumb-cont'>
-                    <img className='list-thumb' src={listThumb+v.backdrop_path} alt='ranking-list'/>
-                </p>
-            </li>
-        ):''
-    })
+    // 각 장르 상위 3개를 썸네일 + 순위 숫자로 렌더링
+    const renderTop3 = (list) => list.slice(0, 3).map((v, i) => (
+        <li key={v.id} className='list-contents' onClick={()=>moveDetail(v.id)}>
+            <p className='list-thumb-cont'>
+                <img className='list-thumb' src={listThumb+v.backdrop_path} alt={v.title}/>
+                <span className='rank-num'>{i + 1}</span>
+            </p>
+        </li>
+    ));
 
-    let romanceRanking = state.romance.map((v,i)=> {
-        return i < 3 ?(
-            <li key={v.id} className='list-contents' onClick={()=>moveDetail(v.id)}>
-                <p className='list-thumb-cont'>
-                    <img className='list-thumb' src={listThumb+v.backdrop_path} alt='ranking-list'/>
-                </p>
-            </li>
-        ):''
-    })
-
-    let actionRanking = state.action.map((v,i)=> {
-        return i < 3 ?(
-            <li key={v.id} className='list-contents' onClick={()=>moveDetail(v.id)}>
-                <p className='list-thumb-cont'>
-                    <img className='list-thumb' src={listThumb+v.backdrop_path} alt='ranking-list'/>
-                </p>
-            </li>
-        ):''
-    })
-
-    let playingRanking = state.playing.map((v,i)=> {
-        return i < 3 ?(
-            <li key={v.id} className='list-contents' onClick={()=>moveDetail(v.id)}>
-                <p className='list-thumb-cont'>
-                    <img className='list-thumb' src={listThumb+v.backdrop_path} alt='ranking-list'/>
-                </p>
-            </li>
-        ):''
-    })
+    let animeRanking = renderTop3(state.animation);
+    let romanceRanking = renderTop3(state.romance);
+    let actionRanking = renderTop3(state.action);
+    let playingRanking = renderTop3(state.playing);
 
     const tabData = [
         { id: 1, button: "#신작", content:playingRanking},

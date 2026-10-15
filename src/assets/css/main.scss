@@ -141,10 +141,13 @@ ul,li,ol{
                             border-radius: 16px;
                             width: 100%;
                         }
-                        &.swiper-slide-next , &.swiper-slide-prev {
-                            transform-origin: 0 100%;
-                            transform: scaleY(0.9);
-                            filter: blur(1px);
+                        // 가운데가 아닌 슬라이드는 가운데 기준으로 살짝 작고 어둡게
+                        // (기존: 왼쪽 아래 기준 scaleY + blur → 세로로만 찌그러지며 까딱거림)
+                        transform-origin: center center;
+                        will-change: transform;
+                        &:not(.swiper-slide-active) {
+                            transform: scale(0.92);
+                            opacity: 0.5;
                         }
                         .slide-logo-section{
                             width: 100%;
@@ -205,12 +208,13 @@ ul,li,ol{
                         color: #999;
                     }
                 }
+                // 가운데 슬라이드(1400px)의 양 끝 안쪽에 배치
                 .swiper-button-prev {
-                    left: 400px;
+                    left: calc(50% - 700px + 24px);
                 }
 
                 .swiper-button-next {
-                    right: 400px;
+                    right: calc(50% - 700px + 24px);
                 }
             }
         }
@@ -365,6 +369,20 @@ ul,li,ol{
                                 width: 100%;
                                 border-radius: 8px;
                             }
+                            // 랭킹 순위 숫자 (썸네일 오른쪽 아래)
+                            .rank-num{
+                                position: absolute;
+                                right: 16px;
+                                bottom: 4px;
+                                z-index: 11;
+                                font-size: 72px;
+                                font-weight: 800;
+                                font-style: italic;
+                                line-height: 1;
+                                color: #6B30E9;
+                                text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+                                pointer-events: none;
+                            }
                         }
                     }
                 }
@@ -465,6 +483,13 @@ ul,li,ol{
                                 font-size: 20px;
                                 font-weight: 700;
                                 padding: 3px;
+                            }
+                            &.age-15{
+                                background-color: #F5C518;
+                                span{ color: #1a1a1a; }
+                            }
+                            &.age-19{
+                                background-color: #E03131;
                             }
                         }
                         .detail-grade{}
