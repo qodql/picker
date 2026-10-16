@@ -17,6 +17,7 @@ import Footer from './components/Footer';
 import Animation from './pages/Animation';
 import Details from './pages/Details';
 import Tvdetail from './pages/Tvdetail';
+import Login from './pages/Login';
 
 
 function App() {
@@ -42,7 +43,7 @@ function App() {
           <Route path='/animation' element={<Animation/>}/>
           <Route path='/details/:id' element={<Details/>}/>
           <Route path='/tvdetail/:id' element={<Tvdetail/>}/>
-          <Route path="/auth/naver/callback" element={<Main />} />
+          <Route path='/login' element={<Login/>}/>
         </Routes>
         <Footer/>
       </Router>

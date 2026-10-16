@@ -620,4 +620,154 @@ ul,li,ol{
 
 
 
+// ---------- 로그인 ----------
+.wrap header .nav-right .user-box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .user-img{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .user-name{
+        max-width: 120px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .login-btn{
+        width: auto;
+        padding: 0 12px;
+    }
+}
+
+// 로그인 화면: 배경 이미지를 화면 전체에 고정하고 헤더·푸터를 그 위에 반투명하게 올린다
+body.login-page{
+    .wrap{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        // 배경 이미지 (흐리게 + 어둡게)
+        &::before{
+            content: '';
+            position: fixed;
+            inset: -20px;
+            background: url(../img/main/main-seoul.jpg) no-repeat center / cover;
+            filter: blur(4px) brightness(0.45);
+            z-index: -2;
+        }
+        // 위·아래를 더 어둡게 해서 헤더·푸터 글자가 잘 보이게
+        &::after{
+            content: '';
+            position: fixed;
+            inset: 0;
+            background: linear-gradient(to bottom,
+                rgba(0, 0, 0, 0.55) 0%,
+                rgba(0, 0, 0, 0) 25%,
+                rgba(0, 0, 0, 0) 70%,
+                rgba(0, 0, 0, 0.7) 100%);
+            z-index: -1;
+            pointer-events: none;
+        }
+    }
+    footer{
+        margin: 0 auto;
+        padding: 40px 0;
+    }
+}
+
+.login{
+    position: relative;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 16px;
+    .login-inner{
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        max-width: 420px;
+        text-align: center;
+    }
+    .login-tit{
+        margin-bottom: 32px;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.4;
+    }
+    .login-btns{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .login-social{
+        position: relative;
+        width: 100%;
+        height: 48px;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: filter 0.2s;
+        &:hover{
+            filter: brightness(0.93);
+        }
+        &:disabled{
+            cursor: default;
+            opacity: 0.7;
+        }
+        .login-icon{
+            position: absolute;
+            left: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+        }
+        &.naver{
+            background-color: #03C75A;
+            color: #fff;
+        }
+        &.google{
+            background-color: #fff;
+            color: #1f1f1f;
+        }
+    }
+    // 네이버 SDK 버튼은 숨겨두고 위 버튼으로 대신 클릭
+    .naver-sdk-btn{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrap header .nav-right .user-box{
+        gap: 6px;
+        .user-name{
+            display: none;
+        }
+    }
+    .login{
+        padding: 48px 0;
+        .login-tit{
+            font-size: 20px;
+            margin-bottom: 24px;
+        }
+    }
+}
+
+
+
 @import '../css/responsive';

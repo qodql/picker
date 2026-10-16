@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -49,7 +49,9 @@ const Slide = () => {
           loop={true}
           speed={500}  // 슬라이드 이동 시간과 크기 변화 시간(0.5s)을 맞춘다
           navigation={true}
-          modules={[Navigation]}
+          modules={[Navigation, Autoplay]}
+          // 5초마다 자동으로 넘김 (화살표를 눌러도 계속 자동재생, 마우스를 올리면 잠시 멈춤)
+          autoplay={{ delay: 5000, disableOnInteraction: false, pauseOnMouseEnter: true }}
           ref={swiperRef}
           // 1400px 이하: CSS에서 슬라이드가 100% 폭이 되므로 1장씩 보여준다
           // 1401px 이상: 1400px 슬라이드 + 양옆 미리보기

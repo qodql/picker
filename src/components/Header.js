@@ -1,11 +1,13 @@
 import React, { useRef, useState } from 'react'
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom'
 import { search } from '../api/tmdb';
+import { logout } from '../api/auth';
 
 const Header = () => {
   const dispatch = useDispatch();
   const navigator = useNavigate();
+  const user = useSelector((state) => state.user);
 
   const [searchValue, setSearchValue] = useState();
   const [searchActive, setSearchActive] = useState(false);
@@ -61,9 +63,14 @@ const Header = () => {
   }
 
   
-  // const moveLogin = ()=>{
-  //   navigator('/login');
-  // }
+  const moveLogin = ()=>{
+    navigator('/login');
+  }
+
+  const handleLogout = ()=>{
+    logout(user);
+    dispatch({ type:'LOGOUT' });
+  }
 
 
   return (
@@ -91,7 +98,15 @@ const Header = () => {
               onClick={searchClear}>x</button>
             </div>
           </form>
-          <button className='login-btn'>로그인</button>
+          {user ? (
+            <div className='user-box'>
+              {user.image && <img className='user-img' src={user.image} alt='' referrerPolicy='no-referrer'/>}
+              <span className='user-name'>{user.name}</span>
+              <button className='login-btn' onClick={handleLogout}>로그아웃</button>
+            </div>
+          ) : (
+            <button className='login-btn' onClick={moveLogin}>로그인</button>
+          )}
         </div>
       </header>
     </>
