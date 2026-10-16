@@ -45,7 +45,7 @@ const Details = () => {
                     </div>
                 </div>
                 <p className='detail-thumb'>
-                    <img src={detailThumb+res.data.backdrop_path}/>
+                    <img src={detailThumb+res.data.backdrop_path} alt={res.data.title}/>
                 </p>
             </div>
             <div className='detail-episode'>
@@ -53,7 +53,7 @@ const Details = () => {
                 <ul>
                     <li>
                         <div className='episode-info'>
-                            <img src={episodeThumb+res.data.backdrop_path}/>
+                            <img src={episodeThumb+res.data.backdrop_path} alt={res.data.title}/>
                             <span>1화</span>
                             <span>{res.data.title}</span>
                         </div>

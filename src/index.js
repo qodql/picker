@@ -23,8 +23,9 @@ function reducer(state = initialState, action){
       return { ...state, user: action.data, isAuthenticated: true };
     case 'LOGOUT':
       return { ...state, user: null, isAuthenticated: false };
-   }
-   return state;
+    default:
+      return state;
+  }
 }
 
 let store = createStore(reducer);

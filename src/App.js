@@ -27,7 +27,7 @@ function App() {
       let res = await main();
       dispatch({type:"get", data:res})
     }())
-  },[])
+  },[dispatch])
 
   
   return (
